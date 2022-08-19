@@ -14,8 +14,44 @@
 fn main() {
     struct Persons {
         Age: i32,
-        Name: str,
-        Color: str
+        Name: String,
+        Color: String
     }
+
+    let data = vec![
+        Persons {
+            Age: 10,
+            Name: "Ralph".to_owned(),
+            Color: "Red".to_owned() 
+        },
+        Persons {
+            Age: 24,
+            Name: "Imaad".to_owned(),
+            Color: "Black".to_owned() 
+        },
+        Persons {
+            Age: 9,
+            Name: String::from("Ivan"),
+            Color: String::from("Blue")
+        },
+    ];
+
+    fn print_name(name: &str) {
+        println!("Name is {:?}", name)
+    }
+
+    fn print_color(color: &str) {
+        println!("Color is {:?}", color)
+    }
+
+    for data in data {
+        if data.Age <= 10 {
+            print_name(&data.Name);
+            print_color(&data.Color);
+        }
+        
+    }
+
+
     
 }
