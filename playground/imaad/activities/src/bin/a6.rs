@@ -16,5 +16,15 @@ fn main() {
         println!("{:?}", number);
         number -= 1;
     }
-    println!("done!")
+    println!("done!");
+    practice()
+}
+
+fn practice() {
+    let mut number1 = 10;
+    while number1 != 0 {
+        println!("{:?}", number1);
+        number1 -= 1;
+    }
+    println!("DONE")
 }

@@ -23,4 +23,16 @@ fn main() {
             break;
         }
     }
+    practice();
+}
+
+fn practice() {
+    let mut example = 3;
+    loop {
+        println!("{:?}", example);
+        example -= 1;
+        if example == -2 {
+            break;
+        }
+    }
 }

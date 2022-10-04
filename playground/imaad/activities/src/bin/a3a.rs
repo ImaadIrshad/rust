@@ -16,5 +16,24 @@ fn main() {
         println!("hello")
     } else {
         println!("goodbye")
+    };
+    anotherfunction();
+    anotherfunctionwithargument(false)
+}
+
+fn anotherfunction () {
+    let example = true;
+    if example == false {
+        println!("its false")
+    } else {
+        println!("its true")
+    }
+}
+
+fn anotherfunctionwithargument(booleanvalue: bool) {
+    if booleanvalue == true {
+        println!("Oh wow it worked and it is true")
+    } else {
+        println!("Oh okay is it false")
     }
 }

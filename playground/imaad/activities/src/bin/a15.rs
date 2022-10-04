@@ -8,7 +8,17 @@
 //
 // Notes:
 // * Use an enum for the tickets with data associated with each variant
+
+enum Tickets {
+    Backstage,
+    Vip,
+    Standard
+}
+
 // * Create one of each ticket and place into a vector
 // * Use a match expression while iterating the vector to print the ticket info
 
-fn main() {}
+fn main() {
+
+}
+
